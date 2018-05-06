@@ -1,10 +1,11 @@
-package com.aurelius.demo.test.facade;
+package com.aurelius.react.facade.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import com.aurelius.demo.test.facade.model.AccountVM;
-import com.aurelius.demo.test.service.IAccountService;
+import com.aurelius.react.facade.IAccountFacade;
+import com.aurelius.react.facade.model.AccountVM;
+import com.aurelius.react.service.IAccountService;
 
 @Component
 public class AccountFacadeImpl implements IAccountFacade {

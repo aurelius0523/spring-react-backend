@@ -1,4 +1,4 @@
-package com.aurelius.demo.test;
+package com.aurelius.react;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

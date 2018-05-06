@@ -1,8 +1,8 @@
-package com.aurelius.demo.test.facade.model;
+package com.aurelius.react.facade.model;
 
 import java.time.LocalDateTime;
 
-import com.aurelius.demo.test.service.generated.response.GeneratedGetAccountResponse;
+import com.aurelius.react.service.generated.response.GeneratedGetAccountResponse;
 
 public class AccountVM{
 	private Account data;

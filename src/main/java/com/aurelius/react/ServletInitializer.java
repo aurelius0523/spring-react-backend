@@ -1,4 +1,4 @@
-package com.aurelius.demo.test;
+package com.aurelius.react;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;

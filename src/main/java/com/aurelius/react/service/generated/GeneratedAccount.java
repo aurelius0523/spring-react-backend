@@ -1,4 +1,4 @@
-package com.aurelius.demo.test.service.generated;
+package com.aurelius.react.service.generated;
 
 import java.time.LocalDateTime;
 

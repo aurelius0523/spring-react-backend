@@ -1,9 +1,9 @@
-package com.aurelius.demo.test.service.generated.response;
+package com.aurelius.react.service.generated.response;
 
 import java.util.List;
 
-import com.aurelius.demo.test.service.generated.GeneratedAccount;
-import com.aurelius.demo.test.service.generated.GeneratedPortfolio;
+import com.aurelius.react.service.generated.GeneratedAccount;
+import com.aurelius.react.service.generated.GeneratedPortfolio;
 
 public class GeneratedGetAccountResponse {
 	private GeneratedAccount account;

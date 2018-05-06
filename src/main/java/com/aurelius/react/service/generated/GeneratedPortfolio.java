@@ -1,4 +1,4 @@
-package com.aurelius.demo.test.service.generated;
+package com.aurelius.react.service.generated;
 
 public class GeneratedPortfolio {
 	private String portfolioId;
