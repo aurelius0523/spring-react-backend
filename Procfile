@@ -1,1 +1,1 @@
-web: mvn clean install -DskipTests
+web: mvn clean install -DskipTests && mvn spring-boot:run
