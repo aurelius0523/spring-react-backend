@@ -9,16 +9,14 @@ import com.aurelius.react.service.IAccountService;
 
 @Component
 public class AccountFacadeImpl implements IAccountFacade {
-	@Autowired
-	private IAccountService accountService;
-	
-	@Override
-	public AccountVM getAccount() {
-		AccountVM accountVM = new AccountVM();
-		accountVM.setShouldShowHeader(false);
-		accountVM.setData(
-				AccountVM.Account.getDataFromSource(accountService.callMockRemoteService()));
-		
-		return accountVM;
-	}
+    @Autowired
+    private IAccountService accountService;
+
+    public AccountVM getAccount() {
+	AccountVM accountVM = new AccountVM();
+	accountVM.setShouldShowHeader(false);
+	accountVM.setData(AccountVM.Account.getDataFromSource(accountService.callMockRemoteService()));
+
+	return accountVM;
+    }
 }

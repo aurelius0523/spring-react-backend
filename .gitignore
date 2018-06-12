@@ -26,3 +26,6 @@
 
 #maven
 .mvn
+
+### node ###
+node_modules/

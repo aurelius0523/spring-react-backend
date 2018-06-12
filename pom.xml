@@ -22,8 +22,9 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>9</java.version>
-		<maven.compiler.target>1.9</maven.compiler.target>
-        <maven.compiler.source>1.9</maven.compiler.source>
+		<maven.compiler.target>9</maven.compiler.target>
+		<maven.compiler.source>9</maven.compiler.source>
+		<react.frontend.version>0.0.1-SNAPSHOT</react.frontend.version>
 	</properties>
 
 	<dependencies>
@@ -31,7 +32,7 @@
 		<dependency>
 			<groupId>com.aurelius</groupId>
 			<artifactId>spring-react-frontend</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<version>${react.frontend.version}</version>
 		</dependency>
 		<!-- Spring boot stuffs -->
 		<dependency>
@@ -42,6 +43,11 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-tomcat</artifactId>
 			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<optional>true</optional>
 		</dependency>
 		<!-- For JSP to work -->
 		<dependency>
@@ -58,7 +64,7 @@
 			<artifactId>h2</artifactId>
 			<scope>runtime</scope>
 		</dependency>
-		
+
 		<!-- Unit testing and the like -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -82,6 +88,17 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<addResources>true</addResources>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>${maven.compiler.source}</source>
+					<target>${maven.compiler.target}</target>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>

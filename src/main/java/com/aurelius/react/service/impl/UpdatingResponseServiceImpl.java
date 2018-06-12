@@ -13,30 +13,29 @@ import com.aurelius.react.service.generated.response.GeneratedComplexResponse;
 @Component
 public class UpdatingResponseServiceImpl implements IUpdatingResponseService {
 
-	@Override
-	public GeneratedComplexResponse getComplexResponse() {
-		GeneratedAccount account = new GeneratedAccount();
-		account.setDateRegistered(LocalDateTime.now());
-		account.setEmail("account@gmail.com");
-		account.setFirstName("Kim Loong");
-		account.setLastName("Tan");
-		account.setLastLogin(LocalDateTime.now());
-		account.setUsername("aurelius");
+    public GeneratedComplexResponse getComplexResponse() {
+	GeneratedAccount account = new GeneratedAccount();
+	account.setDateRegistered(LocalDateTime.now());
+	account.setEmail("account@gmail.com");
+	account.setFirstName("Kim Loong");
+	account.setLastName("Tan");
+	account.setLastLogin(LocalDateTime.now());
+	account.setUsername("aurelius");
 
-		GeneratedPortfolio portfolioOne = new GeneratedPortfolio();
-		portfolioOne.setPortfolioId("001");
-		portfolioOne.setPortfolioName("portfolioOne");
+	GeneratedPortfolio portfolioOne = new GeneratedPortfolio();
+	portfolioOne.setPortfolioId("001");
+	portfolioOne.setPortfolioName("portfolioOne");
 
-		GeneratedPortfolio portfolioTwo = new GeneratedPortfolio();
-		portfolioTwo.setPortfolioId("002");
-		portfolioTwo.setPortfolioName("portfolioTwo");
+	GeneratedPortfolio portfolioTwo = new GeneratedPortfolio();
+	portfolioTwo.setPortfolioId("002");
+	portfolioTwo.setPortfolioName("portfolioTwo");
 
-		GeneratedComplexResponse response = new GeneratedComplexResponse();
-		response.setAccount(account);
-		response.setNewUser(true);
-		response.setCurrentDateTime(LocalDateTime.now());
-		response.setPortfolios(Arrays.asList(portfolioOne, portfolioTwo));
-		return response;
-	}
+	GeneratedComplexResponse response = new GeneratedComplexResponse();
+	response.setAccount(account);
+	response.setNewUser(true);
+	response.setCurrentDateTime(LocalDateTime.now());
+	response.setPortfolios(Arrays.asList(portfolioOne, portfolioTwo));
+	return response;
+    }
 
 }
