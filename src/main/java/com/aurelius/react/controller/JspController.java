@@ -6,8 +6,8 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class JspController {
-	@GetMapping("/")
-	public ModelAndView getHome() {
-		return new ModelAndView("welcome");
-	}
+    @GetMapping("/welcome")
+    public ModelAndView getHome() {
+	return new ModelAndView("welcome");
+    }
 }

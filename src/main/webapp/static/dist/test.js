@@ -1,4 +1,4 @@
 'use strict';
 
 alert('absbssafsa');
-alert('wsosswa');
+alert('as');

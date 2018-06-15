@@ -5,7 +5,7 @@
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"transpile": "babel --presets env -d src/main/resources/static/dist/ src/main/resources/static/js/",
+		"transpile": "babel --presets env -d src/main/webapp/static/dist/ src/main/webapp/static/js/",
 		"babel:watch": "babel-watch src/main/resources/static/dist/test.js",
 		"build:dev": "webpack --mode production --config webpack.common.js",
 		"build:prod": "webpack --mode production --config webpack.common.js"
