@@ -1,1 +1,1 @@
-<footer>copyright © Baeldung</footer>
+<footer>copied-and-righted © kim.loong.tan/aurelius0523</footer>

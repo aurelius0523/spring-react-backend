@@ -1,4 +1,3 @@
 'use strict';
 
-alert('absbssafsa');
-alert('as');
+console.log('This is a transpiled JS');
