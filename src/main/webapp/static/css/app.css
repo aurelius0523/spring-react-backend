@@ -19,6 +19,7 @@ html body {
 	padding: 15px;
 	-webkit-flex: 1 100%;
 	flex: 1 100%;
+	align-items:center;
 }
 
 .article {

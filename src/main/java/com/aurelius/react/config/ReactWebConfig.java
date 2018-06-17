@@ -7,8 +7,8 @@ import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 /**
- * Defines Configuration for React Frontend. React Frontend is included as jar
- * dependency built from spring-react-frontend project.
+ * Defines Configuration for React Frontend. React Frontend is included as
+ * webjars built from spring-react-frontend project.
  * 
  * @author kim.loong.tan
  *
@@ -17,6 +17,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @ComponentScan(basePackages = "com.aurelius.react.config", excludeFilters = @Filter(Configuration.class))
 public class ReactWebConfig implements WebMvcConfigurer {
 
+    @Override
     public void addViewControllers(ViewControllerRegistry registry) {
 	registry.addViewController("/react").setViewName("forward:/index.html");
     }
